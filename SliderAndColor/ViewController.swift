@@ -27,12 +27,10 @@ class ViewController: UIViewController {
         mainView.layer.cornerRadius = 10
         
         redSlider.minimumTrackTintColor = .red
-        redLabel.text = String(redSlider.value)
-        
         greenSlider.minimumTrackTintColor = .green
-        greenLabel.text = String(greenSlider.value)
         
-        blueSlider.minimumTrackTintColor = .blue
+        redLabel.text = String(redSlider.value)
+        greenLabel.text = String(greenSlider.value)
         blueLabel.text = String(blueSlider.value)
     }
 
