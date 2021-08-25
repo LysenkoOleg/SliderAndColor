@@ -27,26 +27,22 @@ class ViewController: UIViewController {
         mainView.layer.cornerRadius = 10
         
         redSlider.minimumTrackTintColor = .red
-        redSlider.value = 0
-        redSlider.minimumValue = 0
-        redSlider.maximumValue = 1
         redLabel.text = String(redSlider.value)
         
         greenSlider.minimumTrackTintColor = .green
-        greenSlider.value = 0
-        greenSlider.minimumValue = 0
-        greenSlider.maximumValue = 1
         greenLabel.text = String(greenSlider.value)
         
         blueSlider.minimumTrackTintColor = .blue
-        blueSlider.value = 0
-        blueSlider.minimumValue = 0
-        blueSlider.maximumValue = 1
         blueLabel.text = String(blueSlider.value)
     }
 
     func changeColorOnMainView() {
-        mainView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+        mainView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
     }
     
     @IBAction func redSliderAction() {
